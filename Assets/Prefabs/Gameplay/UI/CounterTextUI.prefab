@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 3802296963373644672}
   - component: {fileID: 7580656013868397949}
   m_Layer: 5
-  m_Name: CounterUI
+  m_Name: CounterTextUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
