@@ -975,7 +975,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a8546253050ba5488f370beec023f64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
+  speed: 1
+  jumpHeight: 5
   isJump: 0
   animator: {fileID: 211068144}
 --- !u!1 &611221108
@@ -1854,6 +1855,7 @@ GameObject:
   - component: {fileID: 1262477318}
   - component: {fileID: 1262477317}
   - component: {fileID: 1262477320}
+  - component: {fileID: 1262477321}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1979,6 +1981,19 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
+--- !u!114 &1262477321
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1262477316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8dd0c5caa119f6b43b72401e4547d251, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 223107186}
 --- !u!1 &1350132446
 GameObject:
   m_ObjectHideFlags: 0
