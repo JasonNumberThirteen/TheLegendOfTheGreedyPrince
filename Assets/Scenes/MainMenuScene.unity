@@ -691,7 +691,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_Sprite: {fileID: 21300000, guid: 175c662be226fbbe7bdc9b745ad79d5e, type: 3}
-  m_Type: 0
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -890,6 +890,7 @@ MonoBehaviour:
   canvas1: {fileID: 324460877}
   canvas2: {fileID: 1198333972}
   scene: 
+  myPrefab: {fileID: 0}
 --- !u!114 &955952212
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1879,7 +1880,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_Sprite: {fileID: 21300000, guid: 175c662be226fbbe7bdc9b745ad79d5e, type: 3}
-  m_Type: 0
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
