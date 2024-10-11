@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 7147010916211067384}
   - component: {fileID: 7844982047106187081}
   - component: {fileID: 570201787318054162}
+  - component: {fileID: -1420316499660763166}
   m_Layer: 0
   m_Name: Obstacle
   m_TagString: Untagged
@@ -75,7 +76,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1811979457
-  m_SortingLayer: 3
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 80a91aaee8d67724f867619ff86b97fc, type: 3}
   m_Color: {r: 1, g: 0, b: 0, a: 1}
@@ -185,3 +186,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfcbe69980e254945888d1308aefbc9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damage: 1
+--- !u!114 &-1420316499660763166
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2483604326916054816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb914ab22662f6a4f80a48bbcc464057, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movementSpeed: 4
+  moveBackward: 1
