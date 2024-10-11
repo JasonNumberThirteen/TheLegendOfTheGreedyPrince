@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7859998293500071184}
   - component: {fileID: 3596544974774657144}
   - component: {fileID: 7147010916211067384}
+  - component: {fileID: 7844982047106187081}
   m_Layer: 0
   m_Name: Obstacle
   m_TagString: Untagged
@@ -158,3 +159,16 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &7844982047106187081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2483604326916054816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 596fbc56a71828f47a3fe92e69478a64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delay: 30
