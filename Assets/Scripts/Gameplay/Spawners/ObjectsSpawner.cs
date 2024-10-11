@@ -6,6 +6,7 @@ public class ObjectsSpawner : MonoBehaviour
 	[SerializeField] private GameObject gameObjectPrefab;
 	[SerializeField] private GameObject playerGO;
 	[SerializeField] private float offsetFromPlayer = 50f;
+	[SerializeField] private float spawnedObjectsY;
 	
 	private Timer timer;
 
@@ -33,6 +34,6 @@ public class ObjectsSpawner : MonoBehaviour
 	{
 		var x = playerGO != null ? playerGO.transform.position.x + offsetFromPlayer : transform.position.x;
 		
-		return new Vector2(x, 10f);
+		return new Vector2(x, spawnedObjectsY);
 	}
 }
