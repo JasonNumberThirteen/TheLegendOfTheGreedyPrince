@@ -4,15 +4,13 @@ using UnityEngine;
 
 public class Temp_animation_triggers : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
+    public bool isJump;
+    public Animator animator;
+    
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKey(KeyCode.Space)) animator.SetBool("jump", true);
+        else animator.SetBool("jump", false);
     }
 }
