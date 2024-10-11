@@ -201,7 +201,7 @@ GameObject:
   - component: {fileID: 587215890}
   m_Layer: 0
   m_Name: Ground
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -534,6 +534,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementSpeed: 2
+  moveBackward: 0
 --- !u!61 &1289714666
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -891,6 +892,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 663bb1e415b8bf44a8b10639271b41ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  groundDetectionGOTag: Ground
   jumpForce: 300
 --- !u!1 &1791057985
 GameObject:
@@ -990,6 +992,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementSpeed: 1
+  moveBackward: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

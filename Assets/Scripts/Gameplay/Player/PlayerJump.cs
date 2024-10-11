@@ -4,6 +4,7 @@ using UnityEngine.InputSystem;
 [RequireComponent(typeof(Rigidbody2D))]
 public class PlayerJump : MonoBehaviour
 {
+	[SerializeField] private string groundDetectionGOTag = "Ground";
 	[SerializeField, Min(0f)] private float jumpForce = 300f;
 	
 	private Rigidbody2D rb2D;
@@ -28,6 +29,9 @@ public class PlayerJump : MonoBehaviour
 
 	private void OnCollisionEnter2D(Collision2D collision2D)
 	{
-		isGrounded = true;
+		if(collision2D.gameObject.CompareTag(groundDetectionGOTag))
+		{
+			isGrounded = true;
+		}
 	}
 }
