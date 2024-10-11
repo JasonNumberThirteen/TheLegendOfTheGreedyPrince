@@ -3,7 +3,7 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody2D))]
 public class PlayerMovement : MonoBehaviour
 {
-	[SerializeField, Min(0f)] private float movementSpeed = 5f;
+	[SerializeField, Min(0f)] private float movementSpeed = 150f;
 	
 	private Rigidbody2D rb2D;
 
@@ -16,6 +16,6 @@ public class PlayerMovement : MonoBehaviour
 	{
 		var speed = movementSpeed*Time.fixedDeltaTime;
 
-		rb2D.MovePosition(rb2D.position + speed*Vector2.right);
+		rb2D.velocity = new Vector2(speed, rb2D.velocity.y);
 	}
 }
