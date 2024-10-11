@@ -1,8 +1,11 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 [RequireComponent(typeof(PlayerHealth))]
 public class PlayerDeath : MonoBehaviour
 {
+	public UnityEvent playerDiedEvent;
+	
 	private PlayerHealth playerHealth;
 
 	private void Awake()
@@ -22,6 +25,7 @@ public class PlayerDeath : MonoBehaviour
 		if(leftHealthPoints <= 0)
 		{
 			gameObject.SetActive(false);
+			playerDiedEvent?.Invoke();
 		}
 	}
 }
