@@ -21,7 +21,7 @@ public class PlayerHealth : MonoBehaviour
 		return currentHealthPoints;
 	}
 
-	private void Start()
+	private void Awake()
 	{
 		currentHealthPoints = healthPoints;
 	}
