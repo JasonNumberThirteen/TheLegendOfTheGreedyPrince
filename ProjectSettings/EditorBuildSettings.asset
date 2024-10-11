@@ -14,7 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/BackstoryScene.unity
     guid: a7c5f8f4abea5300eb2b97e83da9cdd0
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/AuthorsScene.unity
     guid: 72df5aef6d9222242b4453484b65aee8
   - enabled: 1
