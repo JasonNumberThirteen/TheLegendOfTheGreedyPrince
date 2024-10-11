@@ -167,7 +167,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e64683b4bfe5e24a9e872c598ccded0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameObjectPrefab: {fileID: 1666381189}
+  gameObjectPrefab: {fileID: 2483604326916054816, guid: a214fda6a828d0840a7718f6c8a0c6ec, type: 3}
   playerGO: {fileID: 1666381189}
   offsetFromPlayer: 50
 --- !u!114 &296183716
