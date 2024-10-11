@@ -1172,7 +1172,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e64683b4bfe5e24a9e872c598ccded0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameObjectPrefab: {fileID: 8282244076583317219, guid: 9ea8183746cd40c489c8c258d8eebb33, type: 3}
+  gameObjectPrefab: {fileID: 1195994450594504117, guid: de1b049b897ff9a4e9437e79c5317a9e, type: 3}
   playerGO: {fileID: 1666381189}
   offsetFromPlayer: 50
   spawnedObjectsY: -3.5
@@ -1456,10 +1456,6 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 961739752}
-    - target: {fileID: 8547700150950908997, guid: e33ccbd560cf6a649ae5ebce55c1c4e7, type: 3}
-      propertyPath: target
-      value: 5.54
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
