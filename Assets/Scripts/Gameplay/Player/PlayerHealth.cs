@@ -3,7 +3,7 @@ using UnityEngine.Events;
 
 public class PlayerHealth : MonoBehaviour
 {
-	public UnityEvent<int> playerTookDamageEvent;
+	public UnityEvent<int, int> playerTookDamageEvent;
 	
 	[SerializeField, Min(1)] private int healthPoints = 3;
 
@@ -13,10 +13,15 @@ public class PlayerHealth : MonoBehaviour
 	{
 		currentHealthPoints -= damage;
 
-		playerTookDamageEvent?.Invoke(currentHealthPoints);
+		playerTookDamageEvent?.Invoke(currentHealthPoints, damage);
 	}
 
-	private void Start()
+	public int GetCurrentHealthPoints()
+	{
+		return currentHealthPoints;
+	}
+
+	private void Awake()
 	{
 		currentHealthPoints = healthPoints;
 	}
