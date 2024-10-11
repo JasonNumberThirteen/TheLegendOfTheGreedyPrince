@@ -13,21 +13,21 @@ public class Temp_movement : MonoBehaviour
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        animator.SetBool("run", true);
     }
 
     // Update is called once per frame
     void Update()
     {
         //animation
-        if (Input.GetKey(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space))
         { 
             animator.SetBool("jump", true);
             rb.AddForce(new Vector2(0, jumpHeight), ForceMode2D.Impulse);
         }
         else animator.SetBool("jump", false);
 
-        if (rb.velocity.x > 0) animator.SetBool("run", true);
-        else animator.SetBool ("run", false);
+        
 
         //movement
         float moveHorizontal = Input.GetAxis("Horizontal");
