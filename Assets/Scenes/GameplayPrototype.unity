@@ -533,8 +533,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb914ab22662f6a4f80a48bbcc464057, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraGO: {fileID: 961739752}
-  cameraPositionMultiplier: 2
+  movementSpeed: 2
 --- !u!61 &1289714666
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -660,7 +659,6 @@ GameObject:
   - component: {fileID: 1666381194}
   - component: {fileID: 1666381195}
   - component: {fileID: 1666381193}
-  - component: {fileID: 1666381192}
   - component: {fileID: 1666381196}
   - component: {fileID: 1666381197}
   - component: {fileID: 1666381198}
@@ -739,19 +737,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1666381192
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1666381189}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 29380889e08ca6a4eb9e50104d4a42f3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  movementSpeed: 150
 --- !u!114 &1666381193
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -906,7 +891,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 663bb1e415b8bf44a8b10639271b41ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  groundGOTag: Ground
   jumpForce: 300
 --- !u!1 &1791057985
 GameObject:
@@ -1005,8 +989,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb914ab22662f6a4f80a48bbcc464057, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraGO: {fileID: 961739752}
-  cameraPositionMultiplier: 0.1
+  movementSpeed: 1
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
