@@ -45,11 +45,6 @@ public class PlayerDuck : MonoBehaviour
 		
 		if(duck && timer != null)
 		{
-			//transform.localScale = new Vector3(transform.localScale.x, 0.5f, transform.localScale.z);
-			//canDuck = false;
-
-			//transform.Translate(-Vector2.up*0.25f);
-
 			timer.Reset();
 		}
 	}
