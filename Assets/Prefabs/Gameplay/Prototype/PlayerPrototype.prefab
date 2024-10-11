@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 6644777979340385640}
   - component: {fileID: 4293741532307617662}
   - component: {fileID: 3997476728310474666}
+  - component: {fileID: 7019877463120104318}
   m_Layer: 0
   m_Name: PlayerPrototype
   m_TagString: Untagged
@@ -42,6 +43,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 810799207691529476}
+  - {fileID: 2047559748283454750}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &3968057214901703296
@@ -309,6 +311,68 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timer: {fileID: 8547700150950908997}
+--- !u!114 &7019877463120104318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4586765005769711502}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e460dee8b1de4449b31aa4ec328ffb0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timer: {fileID: 89628042179498724}
+--- !u!1 &7706811081196790530
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2047559748283454750}
+  - component: {fileID: 89628042179498724}
+  m_Layer: 0
+  m_Name: DuckTimer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2047559748283454750
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7706811081196790530}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5025819309423848381}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &89628042179498724
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7706811081196790530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef5b2e24924c7f64cb4deb14c3eb6919, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeElapsedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  target: 1
+  isRepetetive: 0
 --- !u!1 &8743189481280469442
 GameObject:
   m_ObjectHideFlags: 0
