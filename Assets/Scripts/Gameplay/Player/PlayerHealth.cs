@@ -16,6 +16,11 @@ public class PlayerHealth : MonoBehaviour
 		playerTookDamageEvent?.Invoke(currentHealthPoints, damage);
 	}
 
+	public int GetCurrentHealthPoints()
+	{
+		return currentHealthPoints;
+	}
+
 	private void Start()
 	{
 		currentHealthPoints = healthPoints;
