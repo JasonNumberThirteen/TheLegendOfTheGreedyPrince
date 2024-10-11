@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class ParallaxPositionAdjuster : MonoBehaviour
+public class ObjectMovement : MonoBehaviour
 {
 	[SerializeField, Min(0f)] private float movementSpeed = 1f;
 
