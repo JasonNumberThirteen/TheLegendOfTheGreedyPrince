@@ -17,7 +17,7 @@ public class PlayerDeath : MonoBehaviour
 		playerHealth.playerTookDamageEvent.RemoveListener(OnPlayerTookDamage);
 	}
 
-	private void OnPlayerTookDamage(int leftHealthPoints)
+	private void OnPlayerTookDamage(int leftHealthPoints, int damage)
 	{
 		if(leftHealthPoints <= 0)
 		{
