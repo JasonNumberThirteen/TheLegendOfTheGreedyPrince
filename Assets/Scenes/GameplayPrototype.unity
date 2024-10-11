@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 296183716}
   - component: {fileID: 296183715}
   m_Layer: 0
-  m_Name: ObjectsSpawner
+  m_Name: ObstaclesSpawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -186,7 +186,7 @@ MonoBehaviour:
   timeElapsedEvent:
     m_PersistentCalls:
       m_Calls: []
-  target: 1
+  target: 2
   isRepetetive: 1
 --- !u!1 &587215887
 GameObject:
@@ -500,6 +500,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 296183714}
+  - {fileID: 1474306278}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1289714664
@@ -647,6 +648,72 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1474306277
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1474306278}
+  - component: {fileID: 1474306280}
+  - component: {fileID: 1474306279}
+  m_Layer: 0
+  m_Name: CoinsSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1474306278
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1474306277}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1029611089}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1474306279
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1474306277}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e64683b4bfe5e24a9e872c598ccded0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameObjectPrefab: {fileID: 8282244076583317219, guid: 9ea8183746cd40c489c8c258d8eebb33, type: 3}
+  playerGO: {fileID: 1666381189}
+  offsetFromPlayer: 50
+  spawnedObjectsY: -3.5
+--- !u!114 &1474306280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1474306277}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef5b2e24924c7f64cb4deb14c3eb6919, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeElapsedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  target: 5
+  isRepetetive: 1
 --- !u!1 &1666381189
 GameObject:
   m_ObjectHideFlags: 0
@@ -665,6 +732,7 @@ GameObject:
   - component: {fileID: 1666381198}
   - component: {fileID: 1666381199}
   - component: {fileID: 1666381200}
+  - component: {fileID: 1666381201}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -907,6 +975,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5519b7b4bc2a3034e95cd38309254641, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1666381201
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1666381189}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 787271540fd12344ca9ffe1601a26019, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moneyChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1791057985
 GameObject:
   m_ObjectHideFlags: 0
