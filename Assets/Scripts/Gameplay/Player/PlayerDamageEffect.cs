@@ -51,10 +51,16 @@ public class PlayerDamageEffect : MonoBehaviour
 	private void OnPlayerTookDamage(int currentHealthPoints, int damage)
 	{
 		blinkRenderer = true;
+
+		if(timer != null)
+		{
+			timer.Reset();
+		}
 	}
 
 	private void OnTimeElapsed()
 	{
 		blinkRenderer = false;
+		spriteRenderer.enabled = true;
 	}
 }

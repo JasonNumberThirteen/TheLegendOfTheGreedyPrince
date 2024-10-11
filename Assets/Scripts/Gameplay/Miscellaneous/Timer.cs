@@ -11,6 +11,12 @@ public class Timer : MonoBehaviour
 	private float currentTime;
 	private bool timeElapsed;
 
+	public void Reset()
+	{
+		currentTime = 0f;
+		timeElapsed = false;
+	}
+
 	private void Update()
 	{
 		if(currentTime < target)
