@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements;
 using Image = UnityEngine.UI.Image;
+using UnityEngine.SceneManagement;
 
 public class BackstoryChanger : MonoBehaviour
 {
@@ -32,6 +33,8 @@ public class BackstoryChanger : MonoBehaviour
         currentPage = currentPage + 1;
         if (currentPage > nb_pages){
             currentPage = 0;
+            SceneManager.LoadScene("GameplayPrototype");
+            Destroy(GameObject.Find("MusicSource(Clone)"));
         }
         img.sprite = sprite_list[currentPage];
 
