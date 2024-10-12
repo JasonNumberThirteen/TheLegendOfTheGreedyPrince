@@ -60,6 +60,9 @@ TagManager:
   - name: Bushes
     uniqueID: 472725881
     locked: 0
+  - name: Begger
+    uniqueID: 1181988959
+    locked: 0
   - name: Wave2
     uniqueID: 3952014723
     locked: 0
