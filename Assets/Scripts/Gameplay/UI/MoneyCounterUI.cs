@@ -1,15 +1,18 @@
 using TMPro;
 using UnityEngine;
 
+[RequireComponent(typeof(TextUIFontSizeIncreaseEffect))]
 public class MoneyCounterUI : MonoBehaviour
 {
 	private PlayerMoney playerMoney;
 	private TMP_Text counterText;
+	private TextUIFontSizeIncreaseEffect textUIFontSizeIncreaseEffect;
 
 	private void Awake()
 	{
 		playerMoney = FindObjectOfType<PlayerMoney>();
 		counterText = GetComponent<TMP_Text>();
+		textUIFontSizeIncreaseEffect = GetComponent<TextUIFontSizeIncreaseEffect>();
 
 		if(playerMoney != null)
 		{
@@ -40,6 +43,8 @@ public class MoneyCounterUI : MonoBehaviour
 		if(counterText != null && playerMoney != null)
 		{
 			counterText.text = playerMoney.GetCurrentMoney().ToString();
+
+			textUIFontSizeIncreaseEffect.SetFontSize();
 		}
 	}
 }
