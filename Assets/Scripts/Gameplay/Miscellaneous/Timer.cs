@@ -22,6 +22,11 @@ public class Timer : MonoBehaviour
 		return currentTime;
 	}
 
+	public float GetTarget()
+	{
+		return target;
+	}
+
 	private void Update()
 	{
 		if(currentTime < target)
