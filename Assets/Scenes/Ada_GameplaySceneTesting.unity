@@ -671,7 +671,7 @@ MonoBehaviour:
     pieni\u0105dze wie\u015Bniakowi"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2381689f6a2391c42ba99ed2065f88a1, type: 2}
-  m_sharedMaterial: {fileID: -1745785971681263788, guid: 2381689f6a2391c42ba99ed2065f88a1, type: 2}
+  m_sharedMaterial: {fileID: -3748066321523184605, guid: 2381689f6a2391c42ba99ed2065f88a1, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2012,7 +2012,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb914ab22662f6a4f80a48bbcc464057, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSpeed: 5.61
+  movementSpeed: 5
   moveBackward: 1
 --- !u!1 &775967815
 GameObject:
@@ -7120,6 +7120,14 @@ PrefabInstance:
       propertyPath: parentGO
       value: 
       objectReference: {fileID: 840997962}
+    - target: {fileID: 8019772614718145400, guid: 4ea7e74c917efbc439e8744cfb0049e9, type: 3}
+      propertyPath: spawnedObjectsY
+      value: -5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8019772614718145400, guid: 4ea7e74c917efbc439e8744cfb0049e9, type: 3}
+      propertyPath: gameObjectPrefab
+      value: 
+      objectReference: {fileID: 946374375103377266, guid: 6d37cdda387f1fc41a57e32062ddfc96, type: 3}
     - target: {fileID: 8351591424170779337, guid: 4ea7e74c917efbc439e8744cfb0049e9, type: 3}
       propertyPath: parentGO
       value: 
