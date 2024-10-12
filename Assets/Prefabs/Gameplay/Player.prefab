@@ -76,6 +76,18 @@ PrefabInstance:
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 2.0522223
       objectReference: {fileID: 0}
+    - target: {fileID: 7019877463120104318, guid: e33ccbd560cf6a649ae5ebce55c1c4e7, type: 3}
+      propertyPath: colliderSizeWhenDucked.x
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7019877463120104318, guid: e33ccbd560cf6a649ae5ebce55c1c4e7, type: 3}
+      propertyPath: colliderSizeWhenDucked.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7019877463120104318, guid: e33ccbd560cf6a649ae5ebce55c1c4e7, type: 3}
+      propertyPath: colliderOffsetWhenDucked.y
+      value: -0.25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
