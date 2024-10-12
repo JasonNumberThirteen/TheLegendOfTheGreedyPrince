@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 401715320589210498}
   - component: {fileID: 39871808001654922}
   - component: {fileID: 364850479521298248}
-  - component: {fileID: 3235340983855828499}
   m_Layer: 0
   m_Name: CoinPrototype
   m_TagString: Untagged
@@ -97,7 +96,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1195994450594504117}
-  m_BodyType: 1
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -115,7 +114,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 5
 --- !u!58 &401715320589210498
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -176,18 +175,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 596fbc56a71828f47a3fe92e69478a64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  delay: 30
---- !u!114 &3235340983855828499
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1195994450594504117}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb914ab22662f6a4f80a48bbcc464057, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  movementSpeed: 4
-  moveBackward: 1
+  delay: 10
