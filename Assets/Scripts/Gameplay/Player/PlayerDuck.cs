@@ -32,14 +32,13 @@ public class PlayerDuck : MonoBehaviour
 	private void OnTimeElapsed()
 	{
 		SetDuckState(false);
-        animator.SetBool("playerDown", false);
-    }
+		animator.SetBool("playerDown", false);
+	}
 	
 	private void OnDuck(InputValue inputValue)
 	{
 		SetDuckState(true);
-        
-    }
+	}
 
 	private void SetDuckState(bool duck)
 	{
@@ -50,31 +49,12 @@ public class PlayerDuck : MonoBehaviour
 		
 		canDuck = !duck;
 
-		animator.SetBool("playerDown",true);
-
-		//transform.localScale = LocalScale(duck);
-
-		AdjustPosition(duck);
+		animator.SetBool("playerDown", canDuck);
 		
 		if(duck && timer != null)
 		{
 			timer.Reset();
 			playerDuckedEvent?.Invoke();
-            
-        }
-	}
-
-	private Vector3 LocalScale(bool duck)
-	{
-		var y = duck ? 0.5f : 1f;
-		
-		return new Vector3(transform.localScale.x, y, transform.localScale.z);
-	}
-
-	private void AdjustPosition(bool duck)
-	{
-		var direction = duck ? Vector2.down : Vector2.up;
-		
-		transform.Translate(direction*0.25f);
+		}
 	}
 }
