@@ -143,7 +143,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "klawisz W - skok\nklawisz S - unik\nLPM na monet\u0119 - zbierz monet\u0119\nLPM
-    na wie\u015Bniaka - ofiaruj pieni\u0105dze wie\u015Bniakowi"
+    na wie\u015Bniaka - ofiaruj pieni\u0105dze \u017Cebrakowi"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2381689f6a2391c42ba99ed2065f88a1, type: 2}
   m_sharedMaterial: {fileID: -3748066321523184605, guid: 2381689f6a2391c42ba99ed2065f88a1, type: 2}
