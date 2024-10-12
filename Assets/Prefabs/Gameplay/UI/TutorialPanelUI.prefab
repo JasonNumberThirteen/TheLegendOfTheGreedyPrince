@@ -37,7 +37,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 531.778, y: 376.903}
+  m_SizeDelta: {x: 640, y: 384}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3484246198294455980
 CanvasRenderer:
@@ -143,7 +143,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "klawisz W - skok\nklawisz S - unik\nLPM na monet\u0119 - zbierz monet\u0119\nLPM
-    na wie\u015Bniaka - ofiaruj pieni\u0105dze \u017Cebrakowi"
+    na wie\u015Bniaka - ofiaruj monet\u0119 \u017Cebrakowi (dodaje punkt zdrowia)"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2381689f6a2391c42ba99ed2065f88a1, type: 2}
   m_sharedMaterial: {fileID: -3748066321523184605, guid: 2381689f6a2391c42ba99ed2065f88a1, type: 2}
