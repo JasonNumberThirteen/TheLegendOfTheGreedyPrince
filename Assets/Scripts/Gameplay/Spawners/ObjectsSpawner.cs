@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 [RequireComponent(typeof(Timer))]
 public class ObjectsSpawner : MonoBehaviour
@@ -7,6 +8,8 @@ public class ObjectsSpawner : MonoBehaviour
 	[SerializeField] private GameObject parentGO;
 	[SerializeField] private float offsetXFromParent = 50f;
 	[SerializeField] private float spawnedObjectsY;
+
+	public UnityEvent objectSpawnedEvent;
 	
 	private Timer timer;
 
@@ -27,6 +30,7 @@ public class ObjectsSpawner : MonoBehaviour
 		if(gameObjectPrefab != null && parentGO != null)
 		{
 			Instantiate(gameObjectPrefab, SpawnedGOPosition(), Quaternion.identity);
+			objectSpawnedEvent?.Invoke();
 		}
 	}
 

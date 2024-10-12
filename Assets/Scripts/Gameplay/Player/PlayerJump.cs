@@ -1,14 +1,17 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.Events;
 
 [RequireComponent(typeof(Rigidbody2D))]
 public class PlayerJump : MonoBehaviour
 {
+	public UnityEvent playerJumpedEvent;
 	[SerializeField] private string groundDetectionGOTag = "Ground";
 	[SerializeField, Min(0f)] private float jumpForce = 300f;
 	
 	private Rigidbody2D rb2D;
 	private bool isGrounded;
+	
 
 	private void Awake()
 	{
@@ -24,6 +27,8 @@ public class PlayerJump : MonoBehaviour
 			rb2D.AddForce(Vector2.up*jumpForce);
 
 			isGrounded = false;
+
+			playerJumpedEvent?.Invoke();
 		}
 	}
 
