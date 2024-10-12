@@ -1,15 +1,17 @@
-using TMPro;
 using UnityEngine;
 
+[RequireComponent(typeof(RectTransform))]
 public class LivesCounterUI : MonoBehaviour
 {
+	[SerializeField, Min(0)] private int spriteWidth = 64;
+	
 	private PlayerHealth playerHealth;
-	private TMP_Text counterText;
+	private RectTransform rectTransform;
 
 	private void Awake()
 	{
 		playerHealth = FindObjectOfType<PlayerHealth>();
-		counterText = GetComponent<TMP_Text>();
+		rectTransform = GetComponent<RectTransform>();
 
 		if(playerHealth != null)
 		{
@@ -19,7 +21,7 @@ public class LivesCounterUI : MonoBehaviour
 
 	private void Start()
 	{
-		UpdateCounterText();
+		UpdateRectTransformSize();
 	}
 
 	private void OnDestroy()
@@ -32,14 +34,14 @@ public class LivesCounterUI : MonoBehaviour
 
 	private void OnPlayerTookDamage(int leftHealthPoints, int damage)
 	{
-		UpdateCounterText();
+		UpdateRectTransformSize();
 	}
 
-	private void UpdateCounterText()
+	private void UpdateRectTransformSize()
 	{
-		if(counterText != null && playerHealth != null)
+		if(playerHealth != null)
 		{
-			counterText.text = playerHealth.GetCurrentHealthPoints().ToString();
+			rectTransform.sizeDelta = new Vector2(playerHealth.GetCurrentHealthPoints()*spriteWidth, spriteWidth);
 		}
 	}
 }

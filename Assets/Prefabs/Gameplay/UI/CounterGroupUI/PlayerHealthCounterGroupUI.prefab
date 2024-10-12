@@ -12,13 +12,21 @@ PrefabInstance:
       propertyPath: m_text
       value: Lives
       objectReference: {fileID: 0}
+    - target: {fileID: 621571789155217370, guid: bf35a65f80f69c149b4992c6397d1c41, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -3748066321523184605, guid: 2381689f6a2391c42ba99ed2065f88a1, type: 2}
+    - target: {fileID: 2795326930743489798, guid: bf35a65f80f69c149b4992c6397d1c41, type: 3}
+      propertyPath: m_Type
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2795326930743489798, guid: bf35a65f80f69c149b4992c6397d1c41, type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 39181263525b3b242b648675596f37e5, type: 3}
     - target: {fileID: 4338488246518322476, guid: bf35a65f80f69c149b4992c6397d1c41, type: 3}
       propertyPath: m_Name
-      value: PlayerLivesCounterGroupUI
+      value: PlayerHealthCounterGroupUI
       objectReference: {fileID: 0}
     - target: {fileID: 5135006916271400084, guid: bf35a65f80f69c149b4992c6397d1c41, type: 3}
       propertyPath: m_AnchorMax.y
@@ -42,7 +50,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5135006916271400084, guid: bf35a65f80f69c149b4992c6397d1c41, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -0
+      value: -32
       objectReference: {fileID: 0}
     - target: {fileID: 5623403954839545200, guid: bf35a65f80f69c149b4992c6397d1c41, type: 3}
       propertyPath: m_Pivot.x
