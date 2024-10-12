@@ -36,6 +36,7 @@ public class MoneyCounterUI : MonoBehaviour
 	private void OnMoneyChanged(int currentMoney, int collectedMoney)
 	{
 		UpdateCounterText();
+		textUIFontSizeIncreaseEffect.SetFontSize();
 	}
 
 	private void UpdateCounterText()
@@ -43,8 +44,6 @@ public class MoneyCounterUI : MonoBehaviour
 		if(counterText != null && playerMoney != null)
 		{
 			counterText.text = playerMoney.GetCurrentMoney().ToString();
-
-			textUIFontSizeIncreaseEffect.SetFontSize();
 		}
 	}
 }
