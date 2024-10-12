@@ -792,7 +792,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 163.94305, y: -129.31}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 316.42, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &514236106
 MonoBehaviour:
@@ -1321,6 +1321,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   target: 2
+  isEnabledOnStart: 0
   isRepetetive: 0
 --- !u!4 &764884161
 Transform:
@@ -1381,10 +1382,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cb7a2f9537c14fb4bd864874eef21d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canvas1: {fileID: 324460877}
-  canvas2: {fileID: 0}
-  scene: 
-  myPrefab: {fileID: 0}
 --- !u!1 &1052119133
 GameObject:
   m_ObjectHideFlags: 0
@@ -2167,6 +2164,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   transition: {fileID: 955952211}
+  imagesUIFaderIn: {fileID: 764884159}
   mainMenuPanelUI: {fileID: 1104555126}
   authorsPanelUI: {fileID: 2140562360}
 --- !u!4 &1947261056
@@ -2200,6 +2198,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   target: 3
+  isEnabledOnStart: 1
   isRepetetive: 0
 --- !u!1001 &2078586926
 PrefabInstance:

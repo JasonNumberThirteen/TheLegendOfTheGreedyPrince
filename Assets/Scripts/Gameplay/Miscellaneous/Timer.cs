@@ -6,15 +6,22 @@ public class Timer : MonoBehaviour
 	public UnityEvent timeElapsedEvent;
 
 	[SerializeField, Min(0f)] private float target = 1f;
+	[SerializeField] private bool isEnabledOnStart = true;
 	[SerializeField] private bool isRepetetive;
 
 	private float currentTime;
 	private bool timeElapsed;
+	private bool isEnabled;
 
 	public void Reset()
 	{
 		currentTime = 0f;
 		timeElapsed = false;
+	}
+
+	public void SetEnabled(bool enabled)
+	{
+		isEnabled = enabled;
 	}
 
 	public float GetCurrentTime()
@@ -27,8 +34,18 @@ public class Timer : MonoBehaviour
 		return target;
 	}
 
+	private void Start()
+	{
+		SetEnabled(isEnabledOnStart);
+	}
+
 	private void Update()
 	{
+		if(!isEnabled)
+		{
+			return;
+		}
+		
 		if(currentTime < target)
 		{
 			currentTime += Time.deltaTime;
