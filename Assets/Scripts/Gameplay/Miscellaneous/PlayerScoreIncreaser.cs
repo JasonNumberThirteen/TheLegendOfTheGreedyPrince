@@ -7,11 +7,18 @@ public class PlayerScoreIncreaser : MonoBehaviour
 	
 	private Timer timer;
 	private PlayerScore playerScore;
+	private PlayerDeath playerDeath;
 
 	private void Awake()
 	{
 		timer = GetComponent<Timer>();
 		playerScore = FindObjectOfType<PlayerScore>();
+		playerDeath = FindObjectOfType<PlayerDeath>();
+
+		if(playerDeath != null)
+		{
+			playerDeath.playerDiedEvent.AddListener(OnPlayerDied);
+		}
 
 		timer.timeElapsedEvent.AddListener(OnTimeElapsed);
 	}
@@ -19,6 +26,11 @@ public class PlayerScoreIncreaser : MonoBehaviour
 	private void OnDestroy()
 	{
 		timer.timeElapsedEvent.RemoveListener(OnTimeElapsed);
+
+		if(playerDeath != null)
+		{
+			playerDeath.playerDiedEvent.RemoveListener(OnPlayerDied);
+		}
 	}
 
 	private void OnTimeElapsed()
@@ -27,5 +39,10 @@ public class PlayerScoreIncreaser : MonoBehaviour
 		{
 			playerScore.ChangeScoreBy(pointsPerElapsedTime);
 		}
+	}
+
+	private void OnPlayerDied()
+	{
+		Destroy(gameObject);
 	}
 }
