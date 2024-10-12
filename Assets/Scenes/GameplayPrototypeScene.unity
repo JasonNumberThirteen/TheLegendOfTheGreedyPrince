@@ -1172,7 +1172,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameObjectPrefab: {fileID: 1195994450594504117, guid: de1b049b897ff9a4e9437e79c5317a9e, type: 3}
-  playerGO: {fileID: 1666381189}
+  playerGO: {fileID: 1607221386}
   offsetFromPlayer: 0
   spawnedObjectsY: 4
 --- !u!114 &1474306280
