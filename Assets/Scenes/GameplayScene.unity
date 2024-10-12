@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 43615132}
   - component: {fileID: 43615131}
   m_Layer: 0
-  m_Name: Bride02 (1)
+  m_Name: Bridge02 2
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2322,8 +2322,8 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: -2.4, y: 0}
-  - {x: 2.4, y: 0}
+  - {x: -2.3, y: 0.15}
+  - {x: 1.8, y: 0.15}
   m_AdjacentStartPoint: {x: 0, y: 0}
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
@@ -2552,6 +2552,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1348379098}
   - component: {fileID: 1348379099}
+  - component: {fileID: 1348379100}
   m_Layer: 0
   m_Name: Bridge01
   m_TagString: Ground
@@ -2568,7 +2569,7 @@ Transform:
   m_GameObject: {fileID: 1348379097}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.9, y: 0, z: 0}
+  m_LocalPosition: {x: 2.3, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2626,6 +2627,47 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!68 &1348379100
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1348379097}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -1.5, y: 0.15}
+  - {x: 1.6, y: 0.15}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
 --- !u!1001 &1395489759
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3161,8 +3203,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1175109188}
   - {fileID: 1953843606}
+  - {fileID: 1175109188}
   - {fileID: 43615130}
   - {fileID: 1348379098}
   m_Father: {fileID: 460688128}
@@ -3572,7 +3614,7 @@ Transform:
   m_GameObject: {fileID: 1880454344}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 37.5, y: -4.21, z: 0}
+  m_LocalPosition: {x: 35.5, y: -4.21, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3674,7 +3716,7 @@ GameObject:
   - component: {fileID: 1953843608}
   - component: {fileID: 1953843607}
   m_Layer: 0
-  m_Name: Bride02
+  m_Name: Bridge02
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
