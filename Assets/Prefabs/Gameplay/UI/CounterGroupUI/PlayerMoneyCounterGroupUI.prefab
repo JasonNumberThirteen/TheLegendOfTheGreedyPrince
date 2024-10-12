@@ -12,6 +12,18 @@ PrefabInstance:
       propertyPath: m_text
       value: Money
       objectReference: {fileID: 0}
+    - target: {fileID: 621571789155217370, guid: bf35a65f80f69c149b4992c6397d1c41, type: 3}
+      propertyPath: m_fontSize
+      value: 96
+      objectReference: {fileID: 0}
+    - target: {fileID: 621571789155217370, guid: bf35a65f80f69c149b4992c6397d1c41, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 96
+      objectReference: {fileID: 0}
+    - target: {fileID: 621571789155217370, guid: bf35a65f80f69c149b4992c6397d1c41, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -3748066321523184605, guid: 2381689f6a2391c42ba99ed2065f88a1, type: 2}
     - target: {fileID: 2795326930743489798, guid: bf35a65f80f69c149b4992c6397d1c41, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -30,7 +42,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5135006916271400084, guid: bf35a65f80f69c149b4992c6397d1c41, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 182.73
+      value: 274.11
       objectReference: {fileID: 0}
     - target: {fileID: 5135006916271400084, guid: bf35a65f80f69c149b4992c6397d1c41, type: 3}
       propertyPath: m_SizeDelta.y
@@ -38,7 +50,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5135006916271400084, guid: bf35a65f80f69c149b4992c6397d1c41, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 155.36499
+      value: 201.055
       objectReference: {fileID: 0}
     - target: {fileID: 5135006916271400084, guid: bf35a65f80f69c149b4992c6397d1c41, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -147,6 +159,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7486472786848211192, guid: bf35a65f80f69c149b4992c6397d1c41, type: 3}
       insertIndex: -1
       addedObject: {fileID: 4922144870759287063}
+    - targetCorrespondingSourceObject: {fileID: 7486472786848211192, guid: bf35a65f80f69c149b4992c6397d1c41, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 365178676793073196}
   m_SourcePrefab: {fileID: 100100000, guid: bf35a65f80f69c149b4992c6397d1c41, type: 3}
 --- !u!1 &1571543604041193452 stripped
 GameObject:
@@ -165,3 +180,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7e0d46ecc81ac041b2f8d14924aae87, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &365178676793073196
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1571543604041193452}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3fb9ddb25bc60643a06ceb7e495130f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetFontSize: 96
+  increaseSpeed: 30
