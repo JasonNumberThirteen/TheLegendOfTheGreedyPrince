@@ -2,14 +2,8 @@ using UnityEngine;
 
 public class ObjectPositionClamper : MonoBehaviour
 {
+	[SerializeField] private float startPositionX;
 	[SerializeField] private float positionXForReset = 32f;
-
-	private float startPositionX;
-
-	private void Awake()
-	{
-		startPositionX = transform.position.x;
-	}
 	
 	private void Update()
 	{
