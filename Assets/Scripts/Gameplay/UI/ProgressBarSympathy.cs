@@ -53,7 +53,7 @@ public class ProgressBarSympathy : MonoBehaviour
     private void OnSympathyChanged(int currentSympathy, int collectedSympathy)
 	{
 		UpdateProgressSympathy(currentSympathy);
-        Debug.Log(current);
+        
 	}
 
 	private void UpdateProgressSympathy(int currentSympathy)
