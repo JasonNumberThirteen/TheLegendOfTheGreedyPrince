@@ -63,6 +63,12 @@ TagManager:
   - name: Wave2
     uniqueID: 3952014723
     locked: 0
+  - name: PlatformsWaves
+    uniqueID: 2424132509
+    locked: 0
+  - name: Fish
+    uniqueID: 440791091
+    locked: 0
   - name: Wave1
     uniqueID: 906959417
     locked: 0
