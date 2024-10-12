@@ -1,44 +1,27 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UIElements;
-using Image = UnityEngine.UI.Image;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class BackstoryChanger : MonoBehaviour
 {
-    //public GameObject image;
-    public Image img;
-    int currentPage = 0;
+	[SerializeField] private Image storyImageUI;
+	[SerializeField] private Sprite[] sprites;
+	[SerializeField] private string sceneName;
 
-    public List<Sprite> sprite_list = new List<Sprite>();
-    
-    public int nb_pages; 
+	private int currentPageIndex = 0;
 
-    
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    public void ChangePage(){
-        currentPage = currentPage + 1;
-        if (currentPage > nb_pages){
-            currentPage = 0;
-            SceneManager.LoadScene("GameplayPrototype");
-            Destroy(GameObject.Find("MusicSource(Clone)"));
-        }
-        img.sprite = sprite_list[currentPage];
-
-
-    }
-
+	public void OnNextPageClicked()
+	{
+		++currentPageIndex;
+		
+		if(storyImageUI != null && currentPageIndex < sprites.Length)
+		{
+			storyImageUI.sprite = sprites[currentPageIndex];
+		}
+		
+		if(currentPageIndex >= sprites.Length)
+		{
+			SceneManager.LoadScene(sceneName);
+		}
+	}
 }
