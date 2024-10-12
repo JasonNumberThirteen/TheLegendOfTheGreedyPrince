@@ -1,9 +1,12 @@
 using UnityEngine;
 
+[RequireComponent(typeof(Timer))]
 public class MainMenuManager : MonoBehaviour
 {
 	[SerializeField] private GameObject mainMenuPanelUI;
 	[SerializeField] private GameObject authorsPanelUI;
+
+	private Timer timer;
 
 	public void SetMainMenuPanelUIActive(bool active)
 	{
@@ -11,15 +14,41 @@ public class MainMenuManager : MonoBehaviour
 		{
 			mainMenuPanelUI.SetActive(active);
 		}
+	}
 
+	public void SetAuthorsPanelUIActive(bool active)
+	{
 		if(authorsPanelUI != null)
 		{
-			authorsPanelUI.SetActive(!active);
+			authorsPanelUI.SetActive(active);
 		}
+	}
+
+	private void SetBothPanelsActive(bool active)
+	{
+		SetMainMenuPanelUIActive(active);
+		SetAuthorsPanelUIActive(active);
+	}
+
+	private void Awake()
+	{
+		timer = GetComponent<Timer>();
+
+		timer.timeElapsedEvent.AddListener(OnTimeElapsed);
 	}
 
 	private void Start()
 	{
-		SetMainMenuPanelUIActive(false);
+		SetBothPanelsActive(false);
+	}
+
+	private void OnDestroy()
+	{
+		timer.timeElapsedEvent.RemoveListener(OnTimeElapsed);
+	}
+
+	private void OnTimeElapsed()
+	{
+		SetMainMenuPanelUIActive(true);
 	}
 }

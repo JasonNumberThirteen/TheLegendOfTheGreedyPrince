@@ -881,7 +881,6 @@ GameObject:
   m_Component:
   - component: {fileID: 955952210}
   - component: {fileID: 955952211}
-  - component: {fileID: 955952212}
   m_Layer: 0
   m_Name: ScriptsHelper
   m_TagString: Untagged
@@ -920,20 +919,6 @@ MonoBehaviour:
   canvas2: {fileID: 0}
   scene: 
   myPrefab: {fileID: 0}
---- !u!114 &955952212
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 955952208}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a85e370b9552b4bf4991f4b707747084, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gui: {fileID: 324460877}
-  time: 4
 --- !u!1 &1052119133
 GameObject:
   m_ObjectHideFlags: 0
@@ -1644,6 +1629,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1947261056}
+  - component: {fileID: 1947261057}
   - component: {fileID: 1947261055}
   m_Layer: 0
   m_Name: MainMenuManager
@@ -1681,6 +1667,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1947261057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1947261054}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef5b2e24924c7f64cb4deb14c3eb6919, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeElapsedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  target: 3
+  isRepetetive: 0
 --- !u!1001 &2078586926
 PrefabInstance:
   m_ObjectHideFlags: 0
