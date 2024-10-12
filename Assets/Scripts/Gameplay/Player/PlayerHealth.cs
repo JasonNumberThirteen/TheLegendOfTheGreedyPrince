@@ -4,11 +4,19 @@ using UnityEngine.Events;
 public class PlayerHealth : MonoBehaviour
 {
 	public UnityEvent<int, int> playerTookDamageEvent;
-	
+	public UnityEvent<int, int> playerHealedEvent;
+
 	[SerializeField, Min(1)] private int healthPoints = 3;
 	
 	private PlayerInvincibility playerInvincibility;
 	private int currentHealthPoints;
+
+	public void HealBy(int points)
+	{
+		currentHealthPoints += points;
+
+		playerHealedEvent?.Invoke(currentHealthPoints, points);
+	}
 
 	public void TakeDamage(int damage)
 	{
