@@ -11,11 +11,14 @@ public class PlayerJump : MonoBehaviour
 	
 	private Rigidbody2D rb2D;
 	private bool isGrounded;
+
+	private Animator animator;
 	
 
 	private void Awake()
 	{
 		rb2D = GetComponent<Rigidbody2D>();
+		animator = GetComponent<Animator>();
 	}
 
 	private void OnMove(InputValue inputValue)
@@ -29,7 +32,8 @@ public class PlayerJump : MonoBehaviour
 			isGrounded = false;
 
 			playerJumpedEvent?.Invoke();
-		}
+			animator.SetBool("jump", true);
+        }
 	}
 
 	private void OnCollisionEnter2D(Collision2D collision2D)
@@ -37,6 +41,7 @@ public class PlayerJump : MonoBehaviour
 		if(collision2D.gameObject.CompareTag(groundDetectionGOTag))
 		{
 			isGrounded = true;
-		}
+            animator.SetBool("jump", false);
+        }
 	}
 }
