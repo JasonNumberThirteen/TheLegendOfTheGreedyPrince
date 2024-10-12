@@ -13,7 +13,7 @@ public class MainMenuManager : MonoBehaviour
 	{
 		if(transition != null)
 		{
-			transition.NextScene("BackstoryScene");
+			transition.LoadSceneWithName("BackstoryScene");
 		}
 	}
 
