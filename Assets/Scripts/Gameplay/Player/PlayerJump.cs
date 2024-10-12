@@ -34,7 +34,9 @@ public class PlayerJump : MonoBehaviour
 			playerJumpedEvent?.Invoke();
 			animator.SetBool("jump", true);
         }
-	}
+
+        
+    }
 
 	private void OnCollisionEnter2D(Collision2D collision2D)
 	{
