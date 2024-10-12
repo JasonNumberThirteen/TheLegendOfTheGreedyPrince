@@ -4,8 +4,8 @@ using UnityEngine;
 public class ObjectsSpawner : MonoBehaviour
 {
 	[SerializeField] private GameObject gameObjectPrefab;
-	[SerializeField] private GameObject playerGO;
-	[SerializeField] private float offsetFromPlayer = 50f;
+	[SerializeField] private GameObject parentGO;
+	[SerializeField] private float offsetXFromParent = 50f;
 	[SerializeField] private float spawnedObjectsY;
 	
 	private Timer timer;
@@ -24,7 +24,7 @@ public class ObjectsSpawner : MonoBehaviour
 
 	private void OnTimeElapsed()
 	{
-		if(gameObjectPrefab != null && playerGO != null)
+		if(gameObjectPrefab != null && parentGO != null)
 		{
 			Instantiate(gameObjectPrefab, SpawnedGOPosition(), Quaternion.identity);
 		}
@@ -32,7 +32,7 @@ public class ObjectsSpawner : MonoBehaviour
 
 	private Vector2 SpawnedGOPosition()
 	{
-		var x = playerGO != null ? playerGO.transform.position.x + offsetFromPlayer : transform.position.x;
+		var x = parentGO != null ? parentGO.transform.position.x + offsetXFromParent : transform.position.x;
 		
 		return new Vector2(x, spawnedObjectsY);
 	}
