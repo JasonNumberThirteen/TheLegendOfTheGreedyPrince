@@ -7,13 +7,14 @@ public class PlayerHealth : MonoBehaviour
 	public UnityEvent<int, int> playerHealedEvent;
 
 	[SerializeField, Min(1)] private int healthPoints = 3;
+	[SerializeField, Range(1, 8)] private int maxHealthPoints = 8;
 	
 	private PlayerInvincibility playerInvincibility;
 	private int currentHealthPoints;
 
 	public void HealBy(int points)
 	{
-		currentHealthPoints += points;
+		currentHealthPoints = Mathf.Clamp(currentHealthPoints, currentHealthPoints + points, maxHealthPoints);
 
 		playerHealedEvent?.Invoke(currentHealthPoints, points);
 	}
@@ -38,6 +39,6 @@ public class PlayerHealth : MonoBehaviour
 	private void Awake()
 	{
 		playerInvincibility = GetComponent<PlayerInvincibility>();
-		currentHealthPoints = healthPoints;
+		currentHealthPoints = Mathf.Clamp(healthPoints, 1, maxHealthPoints);
 	}
 }
