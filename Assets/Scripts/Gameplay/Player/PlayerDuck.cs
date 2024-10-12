@@ -30,14 +30,16 @@ public class PlayerDuck : MonoBehaviour
 	
 	private void OnDuck(InputValue inputValue)
 	{
-		if(canDuck)
-		{
-			SetDuckState(true);
-		}
+		SetDuckState(true);
 	}
 
 	private void SetDuckState(bool duck)
 	{
+		if(canDuck != duck)
+		{
+			return;
+		}
+		
 		canDuck = !duck;
 		transform.localScale = LocalScale(duck);
 
