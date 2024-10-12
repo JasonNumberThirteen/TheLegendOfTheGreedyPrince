@@ -833,7 +833,7 @@ MonoBehaviour:
   m_text: Autorzy
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2381689f6a2391c42ba99ed2065f88a1, type: 2}
-  m_sharedMaterial: {fileID: -3748066321523184605, guid: 2381689f6a2391c42ba99ed2065f88a1, type: 2}
+  m_sharedMaterial: {fileID: 2100000, guid: 5f2fcfb6fe0583e4b8d589ebff860827, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
