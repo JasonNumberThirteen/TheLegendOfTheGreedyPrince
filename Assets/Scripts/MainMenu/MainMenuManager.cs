@@ -71,6 +71,8 @@ public class MainMenuManager : MonoBehaviour
 	private void Start()
 	{
 		SetBothPanelsActive(false);
+
+		
 	}
 
 	private void OnDestroy()
