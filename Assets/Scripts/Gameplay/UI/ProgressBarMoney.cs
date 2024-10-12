@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ProgressBar : MonoBehaviour
+public class ProgressBarMoney : MonoBehaviour
 {
     [SerializeField] int minimum;
     [SerializeField] int maximum;
@@ -30,6 +30,7 @@ public class ProgressBar : MonoBehaviour
     void Update()
     {
         GetCurrentFill();
+        Debug.Log(current);
     }
 
     void GetCurrentFill()
@@ -45,6 +46,7 @@ public class ProgressBar : MonoBehaviour
     private void OnMoneyChanged(int currentMoney, int collectedMoney)
 	{
 		UpdateProgressMoney();
+        Debug.Log(current);
 	}
 
 	private void UpdateProgressMoney()

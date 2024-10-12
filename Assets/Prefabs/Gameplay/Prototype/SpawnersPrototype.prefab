@@ -69,6 +69,75 @@ MonoBehaviour:
   objectSpawnedEvent:
     m_PersistentCalls:
       m_Calls: []
+--- !u!1 &5029603376141116063
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5202808230730251126}
+  - component: {fileID: 4398082466581177026}
+  - component: {fileID: 6284692106989846306}
+  m_Layer: 0
+  m_Name: BeggarSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5202808230730251126
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5029603376141116063}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7298271370506175109}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4398082466581177026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5029603376141116063}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef5b2e24924c7f64cb4deb14c3eb6919, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeElapsedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  target: 2
+  isRepetetive: 1
+--- !u!114 &6284692106989846306
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5029603376141116063}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e64683b4bfe5e24a9e872c598ccded0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameObjectPrefab: {fileID: 3650259662258494675, guid: 28ea871eff2bff866aaadc54755d894a, type: 3}
+  parentGO: {fileID: 0}
+  offsetXFromParent: 50
+  spawnedObjectsY: -3.5
+  objectSpawnedEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &7015766006346446548
 GameObject:
   m_ObjectHideFlags: 0
@@ -167,6 +236,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 5202808230730251126}
   - {fileID: 9219621301410296168}
   - {fileID: 7249172823537864128}
   m_Father: {fileID: 0}
