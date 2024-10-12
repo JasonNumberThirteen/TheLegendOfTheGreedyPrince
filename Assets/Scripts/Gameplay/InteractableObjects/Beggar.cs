@@ -7,14 +7,15 @@ public class Beggar : MonoBehaviour, IClickableByPlayer
 	
 	public void OnClickByPlayer(GameObject sender, GameObject receiver)
 	{
-		if(sender.TryGetComponent(out PlayerMoney playerMoney) && sender.TryGetComponent(out PlayerSympathy playerSympathy))
+		if(sender.TryGetComponent(out PlayerMoney playerMoney) && sender.TryGetComponent(out PlayerSympathy playerSympathy)
+		&& sender.TryGetComponent(out PlayerHealth playerHealth))
 		{
 			if(playerMoney.GetCurrentMoney() + cost >= 0) {
                 playerMoney.ChangeMoneyBy(cost);
 
                 
                 playerSympathy.ChangeSympathyBy(sympathy);
-                    
+                playerHealth.TakeDamage(-1);
                 
             } 
             
