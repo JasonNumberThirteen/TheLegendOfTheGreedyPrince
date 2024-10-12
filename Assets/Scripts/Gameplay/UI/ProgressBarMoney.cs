@@ -17,7 +17,7 @@ public class ProgressBarMoney : MonoBehaviour
     private void Awake()
 	{
 		playerMoney = FindObjectOfType<PlayerMoney>();
-		
+		current = playerMoney.GetCurrentMoney();
 
 		if(playerMoney != null)
 		{
@@ -25,12 +25,19 @@ public class ProgressBarMoney : MonoBehaviour
 		}
 	}
     
+    private void OnDestroy()
+	{
+		if(playerMoney != null)
+		{
+			playerMoney.moneyChangedEvent.RemoveListener(OnMoneyChanged);
+		}
+	}
 
     // Update is called once per frame
     void Update()
     {
         GetCurrentFill();
-        Debug.Log(current);
+        
     }
 
     void GetCurrentFill()
@@ -45,15 +52,15 @@ public class ProgressBarMoney : MonoBehaviour
 
     private void OnMoneyChanged(int currentMoney, int collectedMoney)
 	{
-		UpdateProgressMoney();
-        Debug.Log(current);
+		UpdateProgressMoney(currentMoney);
+        
 	}
 
-	private void UpdateProgressMoney()
+	private void UpdateProgressMoney(int currentMoney)
 	{
 		if(playerMoney != null)
 		{
-			current +=  10;
+			current = currentMoney;
 		}
 	}
 }
