@@ -168,8 +168,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameObjectPrefab: {fileID: 2483604326916054816, guid: a214fda6a828d0840a7718f6c8a0c6ec, type: 3}
-  playerGO: {fileID: 1666381189}
-  offsetFromPlayer: 50
+  parentGO: {fileID: 1666381189}
+  offsetXFromParent: 50
   spawnedObjectsY: -3.5
 --- !u!114 &296183716
 MonoBehaviour:
@@ -1172,8 +1172,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameObjectPrefab: {fileID: 1195994450594504117, guid: de1b049b897ff9a4e9437e79c5317a9e, type: 3}
-  playerGO: {fileID: 1607221386}
-  offsetFromPlayer: 0
+  parentGO: {fileID: 1607221386}
+  offsetXFromParent: 0
   spawnedObjectsY: 4
 --- !u!114 &1474306280
 MonoBehaviour:
