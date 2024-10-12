@@ -14,14 +14,24 @@ public class BackstoryChanger : MonoBehaviour
 	{
 		++currentPageIndex;
 		
-		if(storyImageUI != null && currentPageIndex < sprites.Length)
-		{
-			storyImageUI.sprite = sprites[currentPageIndex];
-		}
+		UpdateStoryImage();
 		
 		if(currentPageIndex >= sprites.Length)
 		{
 			SceneManager.LoadScene(sceneName);
+		}
+	}
+
+	private void Start()
+	{
+		UpdateStoryImage();
+	}
+
+	private void UpdateStoryImage()
+	{
+		if(storyImageUI != null && currentPageIndex >= 0 && currentPageIndex < sprites.Length)
+		{
+			storyImageUI.sprite = sprites[currentPageIndex];
 		}
 	}
 }
