@@ -13,6 +13,18 @@ PrefabInstance:
       value: ObstaclePrototype_Bird
       objectReference: {fileID: 0}
     - target: {fileID: 3596544974774657144, guid: a214fda6a828d0840a7718f6c8a0c6ec, type: 3}
+      propertyPath: m_Size.x
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3596544974774657144, guid: a214fda6a828d0840a7718f6c8a0c6ec, type: 3}
+      propertyPath: m_Size.y
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3596544974774657144, guid: a214fda6a828d0840a7718f6c8a0c6ec, type: 3}
+      propertyPath: m_Offset.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3596544974774657144, guid: a214fda6a828d0840a7718f6c8a0c6ec, type: 3}
       propertyPath: m_SpriteTilingProperty.pivot.y
       value: 0.5
       objectReference: {fileID: 0}
