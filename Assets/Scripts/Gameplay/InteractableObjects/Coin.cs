@@ -10,13 +10,13 @@ public class Coin : MonoBehaviour, IClickableByPlayer
 		if(sender.TryGetComponent(out PlayerMoney playerMoney))
 		{
 			playerMoney.ChangeMoneyBy(worth);
-
-			if(particleGO != null)
-			{
-				Instantiate(particleGO, transform.position, Quaternion.identity);
-			}
-
-			Destroy(gameObject);
 		}
+
+		if(particleGO != null)
+		{
+			Instantiate(particleGO, transform.position, Quaternion.identity);
+		}
+
+		Destroy(gameObject);
 	}
 }
