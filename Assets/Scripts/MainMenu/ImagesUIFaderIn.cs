@@ -8,6 +8,11 @@ public class ImagesUIFaderIn : MonoBehaviour
 
 	private Timer timer;
 
+	public void StartFading()
+	{
+		timer.SetEnabled(true);
+	}
+
 	private void Awake()
 	{
 		timer = GetComponent<Timer>();

@@ -4,6 +4,7 @@ using UnityEngine;
 public class MainMenuManager : MonoBehaviour
 {
 	[SerializeField] private Transition transition;
+	[SerializeField] private ImagesUIFaderIn imagesUIFaderIn;
 	[SerializeField] private GameObject mainMenuPanelUI;
 	[SerializeField] private GameObject authorsPanelUI;
 
@@ -79,6 +80,11 @@ public class MainMenuManager : MonoBehaviour
 
 	private void OnTimeElapsed()
 	{
+		if(imagesUIFaderIn != null)
+		{
+			imagesUIFaderIn.StartFading();
+		}
+		
 		SetMainMenuPanelUIActive(true);
 	}
 }
