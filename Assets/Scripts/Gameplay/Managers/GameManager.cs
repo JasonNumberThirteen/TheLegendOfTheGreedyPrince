@@ -26,6 +26,8 @@ public class GameManager : MonoBehaviour
 	{
 		DestroyAllComponentsOfType<ObjectMovement>();
 		DestroyAllComponentsOfType<ObjectsSpawner>();
+		DestroyAllComponentsOfType<Animator>();
+		DestroyAllComponentsOfType<DuckMovement>();
 	}
 
 	private void DestroyAllComponentsOfType<T>() where T : Component
