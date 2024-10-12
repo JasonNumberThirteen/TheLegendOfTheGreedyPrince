@@ -1145,9 +1145,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   storyImageUI: {fileID: 2142382444}
   sprites:
-  - {fileID: 21300000, guid: 3963a893397f153129a6fa121b817b3b, type: 3}
-  - {fileID: 21300000, guid: afe91ebda77009740ac033d172dea461, type: 3}
-  - {fileID: 21300000, guid: a57bb81c6c3d7e606b98433822f6652c, type: 3}
+  - {fileID: 21300000, guid: 4f09f645defb19943b93a45f8fe592f0, type: 3}
+  - {fileID: 21300000, guid: e3b16049796a8ec46a09128226081605, type: 3}
   sceneName: GameplayScene
 --- !u!114 &2067288242
 MonoBehaviour:
@@ -1220,7 +1219,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 3963a893397f153129a6fa121b817b3b, type: 3}
+  m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
