@@ -15,6 +15,14 @@ public class PlayerDeath : MonoBehaviour
 		playerHealth.playerTookDamageEvent.AddListener(OnPlayerTookDamage);
 	}
 
+	private void Update(){
+		if(transform.position.y < -10){
+			gameObject.SetActive(false);
+			playerDiedEvent?.Invoke();
+		}
+		
+	}
+
 	private void OnDestroy()
 	{
 		playerHealth.playerTookDamageEvent.RemoveListener(OnPlayerTookDamage);
