@@ -8,6 +8,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6284692106989846306, guid: 447990976d5eb6749a903eb2cc6d9ff5, type: 3}
+      propertyPath: gameObjectPrefab
+      value: 
+      objectReference: {fileID: 143849275724860130, guid: 155c9973bc778ad44bf8619fd2e4aa17, type: 3}
     - target: {fileID: 7133164451542059796, guid: 447990976d5eb6749a903eb2cc6d9ff5, type: 3}
       propertyPath: gameObjectPrefab
       value: 

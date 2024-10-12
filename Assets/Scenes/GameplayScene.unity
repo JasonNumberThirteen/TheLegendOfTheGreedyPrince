@@ -728,7 +728,7 @@ PrefabInstance:
       objectReference: {fileID: 933609070}
     - target: {fileID: 8351591424170779337, guid: 4ea7e74c917efbc439e8744cfb0049e9, type: 3}
       propertyPath: spawnedObjectsY
-      value: -3.5
+      value: -2.52
       objectReference: {fileID: 0}
     - target: {fileID: 8351591424170779337, guid: 4ea7e74c917efbc439e8744cfb0049e9, type: 3}
       propertyPath: offsetXFromParent
