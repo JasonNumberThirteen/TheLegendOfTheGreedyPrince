@@ -50,11 +50,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5135006916271400084, guid: bf35a65f80f69c149b4992c6397d1c41, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 69.715
+      value: 132.53
       objectReference: {fileID: 0}
     - target: {fileID: 5135006916271400084, guid: bf35a65f80f69c149b4992c6397d1c41, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -29.405
+      value: -0.89500046
       objectReference: {fileID: 0}
     - target: {fileID: 5623403954839545200, guid: bf35a65f80f69c149b4992c6397d1c41, type: 3}
       propertyPath: m_Pivot.x
@@ -193,4 +193,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetFontSize: 96
-  increaseSpeed: 30
+  increaseSpeed: 60
