@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6539713815956547010}
   - component: {fileID: 2200961839451268521}
   m_Layer: 0
-  m_Name: Begger
+  m_Name: Beggar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
