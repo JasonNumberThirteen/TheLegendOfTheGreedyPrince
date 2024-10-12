@@ -1323,10 +1323,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerMoneyCounterGroupUI
       objectReference: {fileID: 0}
-    - target: {fileID: 8829924989833500878, guid: 8ae2f6d5a2c6b3345b30b79ef701a965, type: 3}
-      propertyPath: m_sharedMaterial
-      value: 
-      objectReference: {fileID: -3748066321523184605, guid: 2381689f6a2391c42ba99ed2065f88a1, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
