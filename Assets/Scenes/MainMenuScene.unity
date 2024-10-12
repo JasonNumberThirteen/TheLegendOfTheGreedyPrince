@@ -407,7 +407,7 @@ MonoBehaviour:
   m_text: "Adrianna Milewska\nMaria Buczek\nStanis\u0142aw Popowski\nKacper Babiak"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2381689f6a2391c42ba99ed2065f88a1, type: 2}
-  m_sharedMaterial: {fileID: -1745785971681263788, guid: 2381689f6a2391c42ba99ed2065f88a1, type: 2}
+  m_sharedMaterial: {fileID: -3748066321523184605, guid: 2381689f6a2391c42ba99ed2065f88a1, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -831,7 +831,7 @@ MonoBehaviour:
   m_text: Autorzy
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2381689f6a2391c42ba99ed2065f88a1, type: 2}
-  m_sharedMaterial: {fileID: 2100000, guid: b21b439c1b3692640b1a7ee16f89ffa9, type: 2}
+  m_sharedMaterial: {fileID: -3748066321523184605, guid: 2381689f6a2391c42ba99ed2065f88a1, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
