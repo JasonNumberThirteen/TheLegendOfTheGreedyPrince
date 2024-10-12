@@ -25,7 +25,7 @@ public class GameOverManager : MonoBehaviour
 		}
 	}
 
-    public void onDeath(){
+    public void setActiveGameOverPanel(){
         GameOverPanelUI.SetActive(true);
     }
 }

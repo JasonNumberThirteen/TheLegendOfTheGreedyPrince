@@ -16,7 +16,7 @@ public class PlayerDeath : MonoBehaviour
 	}
 
 	private void Update(){
-		if(transform.position.y < -10){
+		if(transform.position.y < -15){
 			gameObject.SetActive(false);
 			playerDiedEvent?.Invoke();
 		}
