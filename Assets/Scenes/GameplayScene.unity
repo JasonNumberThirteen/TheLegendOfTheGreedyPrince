@@ -248,38 +248,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &56021232
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 56021233}
-  m_Layer: 0
-  m_Name: Fish
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &56021233
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 56021232}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11.27, y: -1.97, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1041585251}
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &134755786
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1734,7 +1702,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4876976110668990167, guid: 05fd4396241228e45b5da9486c6fe6e8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3
+      value: -3.9
       objectReference: {fileID: 0}
     - target: {fileID: 4876976110668990167, guid: 05fd4396241228e45b5da9486c6fe6e8, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2003,7 +1971,7 @@ GameObject:
   - component: {fileID: 1041585253}
   - component: {fileID: 1041585252}
   m_Layer: 0
-  m_Name: Fish_visual
+  m_Name: Fish
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2017,12 +1985,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1041585250}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 12.34, y: -2.64, z: -0.09228588}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 23.61, y: -4.61, z: -0.09228588}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 56021233}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1041585252
 SpriteRenderer:
@@ -2407,7 +2375,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6580236667662038940, guid: 155c9973bc778ad44bf8619fd2e4aa17, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 12.47
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 6580236667662038940, guid: 155c9973bc778ad44bf8619fd2e4aa17, type: 3}
       propertyPath: m_LocalPosition.y
@@ -4709,8 +4677,8 @@ SceneRoots:
   - {fileID: 2105945219}
   - {fileID: 565171134}
   - {fileID: 134755786}
-  - {fileID: 56021233}
   - {fileID: 1880454348}
   - {fileID: 1135760804}
   - {fileID: 235305233}
   - {fileID: 483884545}
+  - {fileID: 1041585251}
