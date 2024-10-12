@@ -1811,6 +1811,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 4158587854200812260, guid: 05fd4396241228e45b5da9486c6fe6e8, type: 3}
   m_PrefabInstance: {fileID: 933609069}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &933609071 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 629706804463105381, guid: 05fd4396241228e45b5da9486c6fe6e8, type: 3}
+  m_PrefabInstance: {fileID: 933609069}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 933609070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 332672e4554613e4cb2c831504908c84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &935664357 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7830465075635899411, guid: b3c9b4791fb2d7c40b74b0b572df6a23, type: 3}
@@ -2433,6 +2444,7 @@ GameObject:
   - component: {fileID: 1280716865}
   - component: {fileID: 1280716867}
   - component: {fileID: 1280716866}
+  - component: {fileID: 1280716868}
   m_Layer: 5
   m_Name: GainedScoreCounterTextUI
   m_TagString: Untagged
@@ -2556,6 +2568,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1280716864}
   m_CullTransparentMesh: 1
+--- !u!114 &1280716868
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1280716864}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6ecdb1f6e989674bbefd9c9ca50492a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerScore: {fileID: 933609071}
 --- !u!1 &1285109641
 GameObject:
   m_ObjectHideFlags: 0
