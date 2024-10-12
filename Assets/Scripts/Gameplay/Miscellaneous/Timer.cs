@@ -17,6 +17,11 @@ public class Timer : MonoBehaviour
 		timeElapsed = false;
 	}
 
+	public float GetCurrentTime()
+	{
+		return currentTime;
+	}
+
 	private void Update()
 	{
 		if(currentTime < target)
