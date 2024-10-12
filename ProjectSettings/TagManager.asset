@@ -60,8 +60,11 @@ TagManager:
   - name: Bushes
     uniqueID: 472725881
     locked: 0
-  - name: Ground
+  - name: TopGround
     uniqueID: 1614368567
+    locked: 0
+  - name: BottomGround
+    uniqueID: 1222025089
     locked: 0
   - name: Foreground
     uniqueID: 2482987839
