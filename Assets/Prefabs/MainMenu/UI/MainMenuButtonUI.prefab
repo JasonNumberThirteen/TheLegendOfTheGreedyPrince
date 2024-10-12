@@ -186,7 +186,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Nowa gra
+  m_text: Main menu
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 40c5caffea153488db69e031383e34a3, type: 2}
   m_sharedMaterial: {fileID: 2278380000553108612, guid: 40c5caffea153488db69e031383e34a3, type: 2}
