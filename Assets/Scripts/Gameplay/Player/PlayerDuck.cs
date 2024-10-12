@@ -1,9 +1,12 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.Events;
 
 public class PlayerDuck : MonoBehaviour
 {
 	[SerializeField] private Timer timer;
+
+	public UnityEvent playerDuckedEvent;
 	
 	private bool canDuck = true;
 
@@ -48,6 +51,7 @@ public class PlayerDuck : MonoBehaviour
 		if(duck && timer != null)
 		{
 			timer.Reset();
+			playerDuckedEvent?.Invoke();
 		}
 	}
 
