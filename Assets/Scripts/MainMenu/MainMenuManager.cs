@@ -3,12 +3,42 @@ using UnityEngine;
 [RequireComponent(typeof(Timer))]
 public class MainMenuManager : MonoBehaviour
 {
+	[SerializeField] private Transition transition;
 	[SerializeField] private GameObject mainMenuPanelUI;
 	[SerializeField] private GameObject authorsPanelUI;
 
 	private Timer timer;
 
-	public void SetMainMenuPanelUIActive(bool active)
+	public void OnStartGameButtonClicked()
+	{
+		if(transition != null)
+		{
+			transition.NextScene("BackstoryScene");
+		}
+	}
+
+	public void OnAuthorsButtonClicked()
+	{
+		SetOnlyMainMenuPanelUIActive(false);
+	}
+
+	public void OnBackFromAuthorsButtonClicked()
+	{
+		SetOnlyMainMenuPanelUIActive(true);
+	}
+
+	public void OnQuitButtonClicked()
+	{
+		Application.Quit();
+	}
+
+	private void SetOnlyMainMenuPanelUIActive(bool active)
+	{
+		SetMainMenuPanelUIActive(active);
+		SetAuthorsPanelUIActive(!active);
+	}
+
+	private void SetMainMenuPanelUIActive(bool active)
 	{
 		if(mainMenuPanelUI != null)
 		{
@@ -16,7 +46,7 @@ public class MainMenuManager : MonoBehaviour
 		}
 	}
 
-	public void SetAuthorsPanelUIActive(bool active)
+	private void SetAuthorsPanelUIActive(bool active)
 	{
 		if(authorsPanelUI != null)
 		{
