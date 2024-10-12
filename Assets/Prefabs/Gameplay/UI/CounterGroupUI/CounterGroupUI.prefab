@@ -90,6 +90,7 @@ GameObject:
   - component: {fileID: 7906750592838743099}
   - component: {fileID: 3410876597397375900}
   - component: {fileID: 2795326930743489798}
+  - component: {fileID: 4627136287684532862}
   m_Layer: 5
   m_Name: CounterIcon
   m_TagString: Untagged
@@ -154,6 +155,21 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &4627136287684532862
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4866739503779535413}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 1}
+  m_EffectDistance: {x: 1, y: -1}
+  m_UseGraphicAlpha: 0
 --- !u!1001 &7717514943844782516
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -246,6 +262,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7186155989650062958, guid: 8ae6cab3073c3a64aa831c55d9d83ee2, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 32640e0de61ef2c42ac5f41e5fd2a6ed, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
