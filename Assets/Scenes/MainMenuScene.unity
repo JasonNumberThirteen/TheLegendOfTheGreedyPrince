@@ -381,8 +381,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 163.94305, y: -408.66498}
-  m_SizeDelta: {x: 327.8861, y: 0}
+  m_AnchoredPosition: {x: 384, y: -450.14}
+  m_SizeDelta: {x: 768, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &361564294
 MonoBehaviour:
@@ -404,7 +404,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Adrianna Milewska\nMaria Buczek\nStanis\u0142aw Popowski\nKacper Babiak"
+  m_text: "Design: Adrianna Milewska\nGrafika: Maria Buczek\nProgramowanie: Stanis\u0142aw
+    Popowski\nProgramowanie i d\u017Awi\u0119k: Kacper Babiak\n\nProjekt stworzony
+    w silniku \"Unity\""
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2381689f6a2391c42ba99ed2065f88a1, type: 2}
   m_sharedMaterial: {fileID: -3748066321523184605, guid: 2381689f6a2391c42ba99ed2065f88a1, type: 2}
@@ -791,7 +793,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 163.94305, y: -129.31}
+  m_AnchoredPosition: {x: 384, y: -129.31}
   m_SizeDelta: {x: 316.42, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &514236106
