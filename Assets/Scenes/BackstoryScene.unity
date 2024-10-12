@@ -802,7 +802,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1229868536}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: 54e5bcfc74cf6b7c6a02aa7bc62be9d5, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: 2de815376acde3a2daae3d47030f117e, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}
@@ -1068,6 +1068,7 @@ MonoBehaviour:
   canvas1: {fileID: 0}
   canvas2: {fileID: 0}
   scene: 
+  myPrefab: {fileID: 0}
 --- !u!4 &2067288240
 Transform:
   m_ObjectHideFlags: 0
