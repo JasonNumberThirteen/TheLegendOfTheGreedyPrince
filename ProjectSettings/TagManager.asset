@@ -60,6 +60,12 @@ TagManager:
   - name: Bushes
     uniqueID: 472725881
     locked: 0
+  - name: Wave2
+    uniqueID: 3952014723
+    locked: 0
+  - name: Wave1
+    uniqueID: 906959417
+    locked: 0
   - name: TopGround
     uniqueID: 1614368567
     locked: 0
