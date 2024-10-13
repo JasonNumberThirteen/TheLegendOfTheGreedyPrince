@@ -4,10 +4,12 @@ public class Beggar : MonoBehaviour, IClickableByPlayer
 {
 	[SerializeField] private int cost = 1;
 	[SerializeField, Min(0)] private int score = 1000;
+
+	private bool wasReceivedCoin;
 	
 	public void OnClickByPlayer(GameObject sender, GameObject receiver)
 	{
-		if(sender.TryGetComponent(out PlayerMoney playerMoney) && playerMoney.GetCurrentMoney() >= cost)
+		if(!wasReceivedCoin && sender.TryGetComponent(out PlayerMoney playerMoney) && playerMoney.GetCurrentMoney() >= cost)
 		{
 			playerMoney.ChangeMoneyBy(cost);
 
@@ -20,6 +22,8 @@ public class Beggar : MonoBehaviour, IClickableByPlayer
 			{
 				playerScore.ChangeScoreBy(score);
 			}
+
+			wasReceivedCoin = true;
 		}
 	}
 }
