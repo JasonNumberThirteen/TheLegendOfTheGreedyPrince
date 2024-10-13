@@ -26,4 +26,14 @@ public class Beggar : MonoBehaviour, IClickableByPlayer
 			wasReceivedCoin = true;
 		}
 	}
+
+	private void Awake()
+	{
+		var difficultyManager = FindObjectOfType<DifficultyManager>();
+
+		if(difficultyManager != null)
+		{
+			cost = Mathf.CeilToInt(difficultyManager.GetCurrentDifficulty()*0.5f);
+		}
+	}
 }
