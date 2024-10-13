@@ -10,16 +10,16 @@ public class Beggar : MonoBehaviour, IClickableByPlayer
 		if(sender.TryGetComponent(out PlayerMoney playerMoney) && playerMoney.GetCurrentMoney() >= cost)
 		{
 			playerMoney.ChangeMoneyBy(cost);
-		}
 
-		if(sender.TryGetComponent(out PlayerHealth playerHealth))
-		{
-			playerHealth.HealBy(1);
-		}
+			if(sender.TryGetComponent(out PlayerHealth playerHealth))
+			{
+				playerHealth.HealBy(1);
+			}
 
-		if(sender.TryGetComponent(out PlayerScore playerScore))
-		{
-			playerScore.ChangeScoreBy(score);
+			if(sender.TryGetComponent(out PlayerScore playerScore))
+			{
+				playerScore.ChangeScoreBy(score);
+			}
 		}
 	}
 }
