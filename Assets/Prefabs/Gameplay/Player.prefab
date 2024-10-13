@@ -24,6 +24,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 4586765005769711502, guid: e33ccbd560cf6a649ae5ebce55c1c4e7, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 5025819309423848381, guid: e33ccbd560cf6a649ae5ebce55c1c4e7, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -95,6 +99,14 @@ PrefabInstance:
     - target: {fileID: 7019877463120104318, guid: e33ccbd560cf6a649ae5ebce55c1c4e7, type: 3}
       propertyPath: colliderOffsetWhenDucked.y
       value: -0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 7706811081196790530, guid: e33ccbd560cf6a649ae5ebce55c1c4e7, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8743189481280469442, guid: e33ccbd560cf6a649ae5ebce55c1c4e7, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
