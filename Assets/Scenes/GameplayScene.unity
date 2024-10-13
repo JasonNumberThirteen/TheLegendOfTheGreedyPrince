@@ -1451,14 +1451,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1958048131306309074, guid: 05fd4396241228e45b5da9486c6fe6e8, type: 3}
-      propertyPath: healthPoints
-      value: 18
-      objectReference: {fileID: 0}
-    - target: {fileID: 1958048131306309074, guid: 05fd4396241228e45b5da9486c6fe6e8, type: 3}
-      propertyPath: maxHealthPoints
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 1958048131306309074, guid: 05fd4396241228e45b5da9486c6fe6e8, type: 3}
       propertyPath: playerTookDamageEvent.m_PersistentCalls.m_Calls.Array.size
       value: 1
       objectReference: {fileID: 0}
