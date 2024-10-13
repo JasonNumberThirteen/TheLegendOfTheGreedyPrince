@@ -11,7 +11,7 @@ public class Beggar : MonoBehaviour, IClickableByPlayer
 	{
 		if(!wasReceivedCoin && sender.TryGetComponent(out PlayerMoney playerMoney) && playerMoney.GetCurrentMoney() >= cost)
 		{
-			playerMoney.ChangeMoneyBy(cost);
+			playerMoney.ChangeMoneyBy(-cost);
 
 			if(sender.TryGetComponent(out PlayerHealth playerHealth))
 			{
