@@ -11,4 +11,14 @@ public class Obstacle : MonoBehaviour, ITriggerEnterWithPlayer
 			playerHealth.TakeDamage(damage);
 		}
 	}
+
+	private void Awake()
+	{
+		var difficultyManager = FindObjectOfType<DifficultyManager>();
+
+		if(difficultyManager != null)
+		{
+			damage = Mathf.CeilToInt(difficultyManager.GetCurrentDifficulty()*0.25f);
+		}
+	}
 }
