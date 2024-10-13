@@ -8,6 +8,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 89628042179498724, guid: e33ccbd560cf6a649ae5ebce55c1c4e7, type: 3}
+      propertyPath: target
+      value: 1.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 2106929814808914104, guid: e33ccbd560cf6a649ae5ebce55c1c4e7, type: 3}
+      propertyPath: maxHealthPoints
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3968057214901703296, guid: e33ccbd560cf6a649ae5ebce55c1c4e7, type: 3}
       propertyPath: m_Sprite
       value: 
