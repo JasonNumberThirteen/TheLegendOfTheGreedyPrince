@@ -49,6 +49,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   target: 2
+  isEnabledOnStart: 1
   isRepetetive: 1
 --- !u!114 &5447828024313454227
 MonoBehaviour:
@@ -118,6 +119,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   target: 2
+  isEnabledOnStart: 1
   isRepetetive: 1
 --- !u!114 &6284692106989846306
 MonoBehaviour:
@@ -138,6 +140,75 @@ MonoBehaviour:
   objectSpawnedEvent:
     m_PersistentCalls:
       m_Calls: []
+--- !u!1 &5849804046961434490
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6874060868702221337}
+  - component: {fileID: 4002577847683823196}
+  - component: {fileID: 9120734946364618667}
+  m_Layer: 0
+  m_Name: PlatformSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6874060868702221337
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5849804046961434490}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7298271370506175109}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4002577847683823196
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5849804046961434490}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef5b2e24924c7f64cb4deb14c3eb6919, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeElapsedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  target: 1
+  isEnabledOnStart: 1
+  isRepetetive: 1
+--- !u!114 &9120734946364618667
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5849804046961434490}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd632acb7fc7ba74f8b24d34d4f4d487, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectSpawnedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  gameObjectPrefab: {fileID: 1442072955720417388, guid: 2a33f0282e20df80a82e0b5d1f4a0653, type: 3}
+  offsetXPerSpawn: 38
+  spawnedObjectsY: -4.79
 --- !u!1 &7015766006346446548
 GameObject:
   m_ObjectHideFlags: 0
@@ -187,6 +258,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   target: 5
+  isEnabledOnStart: 1
   isRepetetive: 1
 --- !u!114 &7133164451542059796
 MonoBehaviour:
@@ -239,5 +311,6 @@ Transform:
   - {fileID: 5202808230730251126}
   - {fileID: 9219621301410296168}
   - {fileID: 7249172823537864128}
+  - {fileID: 6874060868702221337}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

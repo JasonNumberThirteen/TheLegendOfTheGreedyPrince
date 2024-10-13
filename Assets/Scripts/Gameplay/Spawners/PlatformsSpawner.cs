@@ -16,10 +16,10 @@ public class PlatformsSpawner : MonoBehaviour
 	private void Awake()
 	{
 		timer = GetComponent<Timer>();
-		currentOffsetX = offsetXPerSpawn * 2;
+		
 		timer.timeElapsedEvent.AddListener(OnTimeElapsed);
 
-		currentOffsetX = offsetXPerSpawn;
+		currentOffsetX = offsetXPerSpawn * 2;
 	}
 
 	private void OnDestroy()
