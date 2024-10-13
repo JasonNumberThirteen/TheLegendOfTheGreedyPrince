@@ -193,7 +193,11 @@ PrefabInstance:
     - target: {fileID: 3148874240859307316, guid: a751012a05539485cba8fee6e8b7b5fc, type: 3}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: 08e54a3121ada5c5fbac2afdb3195bd8, type: 3}
+      objectReference: {fileID: 8300000, guid: 6f0cee8466614d83fa77622837f8a6f4, type: 3}
+    - target: {fileID: 3148874240859307316, guid: a751012a05539485cba8fee6e8b7b5fc, type: 3}
+      propertyPath: BypassEffects
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3464460264641749538, guid: a751012a05539485cba8fee6e8b7b5fc, type: 3}
       propertyPath: m_LocalPosition.x
       value: 492.5
