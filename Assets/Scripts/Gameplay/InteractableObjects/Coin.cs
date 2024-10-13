@@ -25,4 +25,14 @@ public class Coin : MonoBehaviour, IClickableByPlayer
 
 		Destroy(gameObject);
 	}
+
+	private void Awake()
+	{
+		var difficultyManager = FindObjectOfType<DifficultyManager>();
+
+		if(difficultyManager != null)
+		{
+			score *= difficultyManager.GetCurrentDifficulty();
+		}
+	}
 }
