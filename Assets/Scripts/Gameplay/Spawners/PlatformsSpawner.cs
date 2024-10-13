@@ -18,6 +18,8 @@ public class PlatformsSpawner : MonoBehaviour
 		timer = GetComponent<Timer>();
 
 		timer.timeElapsedEvent.AddListener(OnTimeElapsed);
+
+		currentOffsetX = offsetXPerSpawn;
 	}
 
 	private void OnDestroy()
