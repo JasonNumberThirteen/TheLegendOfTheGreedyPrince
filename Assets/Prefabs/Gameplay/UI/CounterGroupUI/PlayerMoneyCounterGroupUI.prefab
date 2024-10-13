@@ -32,6 +32,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerMoneyCounterGroupUI
       objectReference: {fileID: 0}
+    - target: {fileID: 4854425257878407359, guid: bf35a65f80f69c149b4992c6397d1c41, type: 3}
+      propertyPath: m_Padding.m_Right
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 5135006916271400084, guid: bf35a65f80f69c149b4992c6397d1c41, type: 3}
       propertyPath: m_AnchorMax.y
       value: 1
@@ -193,4 +197,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetFontSize: 96
-  increaseSpeed: 60
+  increaseSpeed: 90
