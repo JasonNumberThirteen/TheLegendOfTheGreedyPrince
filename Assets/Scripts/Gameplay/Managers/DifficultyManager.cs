@@ -9,6 +9,11 @@ public class DifficultyManager : MonoBehaviour
 	private int currentDifficulty = 1;
 	private Timer timer;
 
+	public int GetCurrentDifficulty()
+	{
+		return currentDifficulty;
+	}
+
 	private void Awake()
 	{
 		timer = GetComponent<Timer>();
