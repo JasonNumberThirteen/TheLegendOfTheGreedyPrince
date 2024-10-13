@@ -14,7 +14,7 @@ public class PlayerHealth : MonoBehaviour
 
 	public void HealBy(int points)
 	{
-		currentHealthPoints = Mathf.Clamp(currentHealthPoints  + points, currentHealthPoints, maxHealthPoints);
+		currentHealthPoints = Mathf.Clamp(currentHealthPoints + points, currentHealthPoints, maxHealthPoints);
 
 		playerHealedEvent?.Invoke(currentHealthPoints, points);
 	}
