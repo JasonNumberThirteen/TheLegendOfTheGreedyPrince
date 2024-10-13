@@ -122,11 +122,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!4 &46293945 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4727034883440762734, guid: 4ea7e74c917efbc439e8744cfb0049e9, type: 3}
-  m_PrefabInstance: {fileID: 565171134}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &134755786
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -706,7 +701,7 @@ PrefabInstance:
       objectReference: {fileID: 933609070}
     - target: {fileID: 8019772614718145400, guid: 4ea7e74c917efbc439e8744cfb0049e9, type: 3}
       propertyPath: spawnedObjectsY
-      value: -2.25
+      value: -2.75
       objectReference: {fileID: 0}
     - target: {fileID: 8019772614718145400, guid: 4ea7e74c917efbc439e8744cfb0049e9, type: 3}
       propertyPath: gameObjectPrefab
@@ -714,7 +709,7 @@ PrefabInstance:
       objectReference: {fileID: 946374375103377266, guid: 6d37cdda387f1fc41a57e32062ddfc96, type: 3}
     - target: {fileID: 8019772614718145400, guid: 4ea7e74c917efbc439e8744cfb0049e9, type: 3}
       propertyPath: offsetXFromParent
-      value: 10
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 8351591424170779337, guid: 4ea7e74c917efbc439e8744cfb0049e9, type: 3}
       propertyPath: parentGO
@@ -762,10 +757,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects:
-    - targetCorrespondingSourceObject: {fileID: 4727034883440762734, guid: 4ea7e74c917efbc439e8744cfb0049e9, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2056381154}
+    m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ea7e74c917efbc439e8744cfb0049e9, type: 3}
 --- !u!224 &570018172 stripped
@@ -3033,75 +3025,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7879584692164551833, guid: 2f856079d5347874ba9d3e224785a4f9, type: 3}
   m_PrefabInstance: {fileID: 6954146505499405720}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &2056381153
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2056381154}
-  - component: {fileID: 2056381156}
-  - component: {fileID: 2056381155}
-  m_Layer: 0
-  m_Name: PlatformSpawner
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2056381154
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2056381153}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 46293945}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2056381155
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2056381153}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dd632acb7fc7ba74f8b24d34d4f4d487, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  objectSpawnedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  gameObjectPrefab: {fileID: 1442072955720417388, guid: 2a33f0282e20df80a82e0b5d1f4a0653, type: 3}
-  offsetXPerSpawn: 38
-  spawnedObjectsY: -4.79
---- !u!114 &2056381156
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2056381153}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef5b2e24924c7f64cb4deb14c3eb6919, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  timeElapsedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  target: 1
-  isEnabledOnStart: 1
-  isRepetetive: 1
 --- !u!1001 &2105945219
 PrefabInstance:
   m_ObjectHideFlags: 0
