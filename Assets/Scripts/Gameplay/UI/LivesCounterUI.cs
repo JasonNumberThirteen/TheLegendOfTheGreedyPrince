@@ -16,6 +16,7 @@ public class LivesCounterUI : MonoBehaviour
 		if(playerHealth != null)
 		{
 			playerHealth.playerTookDamageEvent.AddListener(OnPlayerTookDamage);
+			playerHealth.playerHealedEvent.AddListener(OnPlayerHealed);
 		}
 	}
 
@@ -29,10 +30,16 @@ public class LivesCounterUI : MonoBehaviour
 		if(playerHealth != null)
 		{
 			playerHealth.playerTookDamageEvent.RemoveListener(OnPlayerTookDamage);
+			playerHealth.playerHealedEvent.RemoveListener(OnPlayerHealed);
 		}
 	}
 
 	private void OnPlayerTookDamage(int leftHealthPoints, int damage)
+	{
+		UpdateRectTransformSize();
+	}
+
+	private void OnPlayerHealed(int leftHealthPoints, int healedPoints)
 	{
 		UpdateRectTransformSize();
 	}
