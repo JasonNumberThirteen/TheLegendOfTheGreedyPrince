@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4650345611971123803}
   - component: {fileID: 6539713815956547010}
   - component: {fileID: 2200961839451268521}
+  - component: {fileID: 8656004908156454836}
   m_Layer: 0
   m_Name: Beggar
   m_TagString: Untagged
@@ -121,3 +122,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movementSpeed: 3
   moveBackward: 1
+--- !u!114 &8656004908156454836
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 143849275724860130}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e6b2661c51cc9596a7fb8b6a73fdd5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cost: 1
+  score: 1000
