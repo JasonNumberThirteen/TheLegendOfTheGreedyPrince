@@ -10,19 +10,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2483604326916054816, guid: a214fda6a828d0840a7718f6c8a0c6ec, type: 3}
       propertyPath: m_Name
-      value: ObstaclePrototype_Bird
+      value: Bird
       objectReference: {fileID: 0}
     - target: {fileID: 3596544974774657144, guid: a214fda6a828d0840a7718f6c8a0c6ec, type: 3}
       propertyPath: m_Size.x
-      value: 1.5
+      value: 1.4
       objectReference: {fileID: 0}
     - target: {fileID: 3596544974774657144, guid: a214fda6a828d0840a7718f6c8a0c6ec, type: 3}
       propertyPath: m_Size.y
-      value: 0.8
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 3596544974774657144, guid: a214fda6a828d0840a7718f6c8a0c6ec, type: 3}
       propertyPath: m_Offset.y
-      value: 0
+      value: -0.05
       objectReference: {fileID: 0}
     - target: {fileID: 3596544974774657144, guid: a214fda6a828d0840a7718f6c8a0c6ec, type: 3}
       propertyPath: m_SpriteTilingProperty.pivot.y
