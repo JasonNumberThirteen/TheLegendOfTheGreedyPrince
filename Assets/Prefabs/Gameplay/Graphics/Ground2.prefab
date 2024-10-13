@@ -136,6 +136,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2816936354326267968}
   - component: {fileID: 909871520379951115}
+  - component: {fileID: 2016094948969727256}
   m_Layer: 0
   m_Name: Ground2
   m_TagString: Ground
@@ -176,6 +177,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movementSpeed: 3
   moveBackward: 1
+--- !u!114 &2016094948969727256
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1442072955720417388}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 596fbc56a71828f47a3fe92e69478a64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delay: 300
 --- !u!1 &2474369073984841682
 GameObject:
   m_ObjectHideFlags: 0
