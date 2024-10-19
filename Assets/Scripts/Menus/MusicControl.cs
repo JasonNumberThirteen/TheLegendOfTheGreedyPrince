@@ -1,23 +1,20 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class MusicControl : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+	private static MusicControl instance;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+	private void Awake()
+	{
+		DontDestroyOnLoad(this);
 
-    void Awake()
-    {
-        DontDestroyOnLoad(gameObject);
-    }
+		if(instance == null)
+		{
+			instance = this;
+		}
+		else if(instance != null)
+		{
+			Destroy(gameObject);
+		}
+	}
 }
