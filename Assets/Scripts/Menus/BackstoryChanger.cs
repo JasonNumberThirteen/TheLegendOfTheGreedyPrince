@@ -19,10 +19,6 @@ public class BackstoryChanger : MonoBehaviour
 		if(currentPageIndex >= sprites.Length)
 		{
 			SceneManager.LoadScene(sceneName);
-			AudioSource musicSource = (AudioSource)FindObjectOfType(typeof(AudioSource));
-			if (musicSource){
-				Destroy(musicSource);
-			}
 		}
 	}
 
