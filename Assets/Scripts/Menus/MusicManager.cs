@@ -1,8 +1,8 @@
 using UnityEngine;
 
-public class MusicControl : MonoBehaviour
+public class MusicManager : MonoBehaviour
 {
-	private static MusicControl instance;
+	private static MusicManager instance;
 
 	private void Awake()
 	{
